@@ -1,0 +1,127 @@
+.main-div {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgb(216, 216, 216);
+}
+
+.container {
+    max-width: 80vh;
+    max-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(123, 212, 123);
+    padding: 1em;
+    border-radius: 2em;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    -ms-border-radius: 2em;
+    -o-border-radius: 2em;
+    margin-top: 30px;
+    position: relative;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.input-field {
+    margin-top: 1em;
+    border: none;
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+input {
+    border: none;
+    padding: 0.5em;
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+}
+input:focus {
+    outline: none;
+}
+
+.addtodo {
+    position: absolute;
+    right: 5px;
+}
+
+button {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: none;
+}
+.all-todo {
+    display: inline-block;
+    flex-direction: column;
+    width: 40vw;
+    padding: 1em;
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+    top: 7em;
+}
+.each-todo {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    background: rgb(121, 121, 232);
+    padding: .7em 1.5em 1em .7em;
+    border-radius: 2em;
+    -webkit-border-radius:2em;
+    -moz-border-radius:2em;
+    -ms-border-radius:2em;
+    -o-border-radius:2em;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+.todo-btn {
+    width: 2em;
+    height: 2em;
+    text-align: center;
+}
+@media only screen and (min-width: 600px) {
+    .container {
+        width: 90vw;
+        height: 70vh;
+        margin-top: 30px;
+        position: relative;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    input {
+        width: 30vw;
+    }
+    .all-todo {
+        display: inline-block;
+        flex-direction: column;
+        width: 40vw;
+        padding: 1em;
+        position: absolute;
+        z-index: 100;
+        bottom: 0;
+        top: 16em;
+    }
+    .each-todo {
+
+    }
+  }
